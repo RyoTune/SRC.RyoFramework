@@ -339,7 +339,7 @@ function Publish-Common {
         $PublishTarget=""
     )
 
-    ls -d
+    Get-ChildItem -Directory
     Remove-Item $Directory -Recurse -ErrorAction SilentlyContinue
     New-Item $Directory -ItemType Directory -ErrorAction SilentlyContinue
 	$arguments = "$(Get-Common-Publish-Args -AllowDeltas $AllowDeltas) --outputfolder `"$Directory`" --publishtarget $PublishTarget"
