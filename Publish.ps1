@@ -339,7 +339,6 @@ function Publish-Common {
         $PublishTarget=""
     )
 
-    Get-ChildItem -File
     Remove-Item $Directory -Recurse -ErrorAction SilentlyContinue
     New-Item $Directory -ItemType Directory -ErrorAction SilentlyContinue
 	$arguments = "$(Get-Common-Publish-Args -AllowDeltas $AllowDeltas) --outputfolder `"$Directory`" --publishtarget $PublishTarget"
@@ -370,7 +369,7 @@ function Cleanup {
 
 # Build & Publish
 New-Item $TempDirectory -ItemType Directory -ErrorAction SilentlyContinue
-Cleanup
+# Cleanup aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 Get-Tools
 
 if ($MakeDelta) {
