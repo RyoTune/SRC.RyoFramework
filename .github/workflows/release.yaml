@@ -69,6 +69,7 @@ jobs:
         run: npm install -g auto-changelog
 
       - name: Create Changelog
+        if: false
         run: |
           [System.IO.Directory]::CreateDirectory("$env:PUBLISH_PATH")
           if ($env:IS_RELEASE -eq 'true') {
