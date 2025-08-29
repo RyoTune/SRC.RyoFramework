@@ -77,7 +77,7 @@ jobs:
           }
 
       - name: Build
-        run: Publish.ps1
+        run: ./Publish.ps1
 
       - name: Upload GitHub Release Artifact
         uses: actions/upload-artifact@v4
