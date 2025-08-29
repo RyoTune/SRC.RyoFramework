@@ -164,7 +164,7 @@ param (
     ## => User Config <= ## 
     $ProjectPath = "",
     $PackageName = "SRC.RyoFramework",
-    $PublishOutputDir = "../Publish/ToUpload",
+    $PublishOutputDir = "./Publish/ToUpload",
 
     ## => User: Delta Config
     # Pick one and configure settings below.
@@ -191,7 +191,7 @@ param (
 )
 
 ## => User: Publish Output
-$publishBuildDirectory = "."      # Build directory for current version of the mod.
+$publishBuildDirectory = "./Reloaded"      # Build directory for current version of the mod.
 $deltaDirectory = "Publish/Builds/LastVersion"                # Path to last version of the mod.
 
 $PublishGenericDirectory = "$PublishOutputDir/Generic"        # Publish files for any target not listed below.
