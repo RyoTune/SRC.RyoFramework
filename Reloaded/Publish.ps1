@@ -162,7 +162,7 @@ param (
     $UseScriptDirectory=$True,
 
     ## => User Config <= ## 
-    $ProjectPath = "SRC.RyoFramework.csproj",
+    $ProjectPath = "",
     $PackageName = "SRC.RyoFramework",
     $PublishOutputDir = "Publish/ToUpload",
 

@@ -1,5 +1,5 @@
 {
-  "ModId": "RyoFrameworkforSonic_099245",
+  "ModId": "SRC.RyoFramework",
   "ModName": "Ryo Framework for Sonic Racing: CrossWorlds",
   "ModAuthor": "RyoTune",
   "ModVersion": "1.0.0",
@@ -14,7 +14,7 @@
   "CanUnload": null,
   "HasExports": null,
   "IsLibrary": false,
-  "ReleaseMetadataFileName": "RyoFrameworkforSonic_099245.ReleaseMetadata.json",
+  "ReleaseMetadataFileName": "SRC.RyoFramework.ReleaseMetadata.json",
   "PluginData": {
     "GitHubDependencies": {
       "IdToConfigMap": {
@@ -54,17 +54,19 @@
           },
           "ReleaseMetadataName": "SharedScans.Reloaded.ReleaseMetadata.json"
         }
+      },
+      "GitHubRelease": {
+        "UserName": "RyoTune",
+        "RepositoryName": "SRC.RyoFramework",
+        "UseReleaseTag": false,
+        "AssetFileName": "Mod.zip"
       }
     }
   },
   "IsUniversalMod": false,
-  "ModDependencies": [
-    "Ryo.Reloaded"
-  ],
+  "ModDependencies": ["Ryo.Reloaded"],
   "OptionalDependencies": [],
-  "SupportedAppId": [
-    "sonicracingcrossworldssteam.exe"
-  ],
+  "SupportedAppId": ["sonicracingcrossworldssteam.exe"],
   "ProjectUrl": "",
   "CreatorUrl": "",
   "IsSeparator": false
