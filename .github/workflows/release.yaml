@@ -58,6 +58,11 @@ jobs:
         with:
           node-version: "14"
 
+      - name: Setup .NET Core SDK (5.0)
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 5.0.x
+
       - name: Setup AutoChangelog
         run: npm install -g auto-changelog
 
