@@ -37,7 +37,7 @@ env:
 
   IS_RELEASE: ${{ startsWith(github.ref, 'refs/tags/') }}
   RELEASE_TAG: ${{ github.ref_name }}
-  PROJECT_DIR: SRC.RyoFramework
+  PROJECT_DIR: Reloaded
 
 jobs:
   build:
@@ -62,11 +62,6 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 5.0.x
-
-      - name: Setup .NET Core SDK (8.0)
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: 8.0.x
 
       - name: Setup AutoChangelog
         run: npm install -g auto-changelog
