@@ -162,8 +162,8 @@ param (
     $UseScriptDirectory=$True,
 
     ## => User Config <= ## 
-    $ProjectPath = "P3R.UEToolkit.csproj",
-    $PackageName = "P3R.UEToolkit",
+    $ProjectPath = "SRC.RyoFramework.csproj",
+    $PackageName = "SRC.RyoFramework",
     $PublishOutputDir = "Publish/ToUpload",
 
     ## => User: Delta Config
@@ -180,7 +180,7 @@ param (
 
     $GameBananaItemId = 333681, # From mod page URL.
 
-    $NuGetPackageId = "P3R.UEToolkit",
+    $NuGetPackageId = "SRC.RyoFramework",
     $NuGetFeedUrl = "http://packages.sewer56.moe:5000/v3/index.json",
     $NuGetAllowUnlisted = $False,
 
